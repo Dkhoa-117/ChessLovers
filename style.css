@@ -1,0 +1,57 @@
+/* Style buttons */
+.btn {
+	text-decoration: none;
+	background-color: rgb(91, 91, 91); /* Blue background */
+	border: none; /* Remove borders */
+	color: white; /* White text */
+	padding: 1.2rem 1rem; /* Some padding */
+	font-weight: 600;
+	display: flex;
+	column-gap: 0.8rem;
+	font-size: 1.5rem; /* Set a font size */
+	cursor: pointer; /* Mouse pointer on hover */
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0 9px #999;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+	background-color: rgb(57, 56, 56);
+}
+
+.btn:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.btn-title {
+	flex: 1;
+	text-align: start;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.container {
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -30%);
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+body {
+	background-image: url("img/background/chess-background.jpeg");
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+nav {
+	padding: 1rem 5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fa-solid {
+	font-size: 4rem;
+	height: 4rem;
+	width: 4rem;
+}

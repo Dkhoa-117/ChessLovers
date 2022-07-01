@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/chesspieces/wikipedia/bP.png">
+    <link rel="stylesheet" href="/css/chessboard-1.0.0.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Online chess</title>
+</head>
+
+<body>
+    <section>
+        <!-- ! Contact -->
+        <nav>
+            <a href="/"> <img src="/img/logo/chesscom-logo.png" style="height: 40px; width: auto;"></a>
+            <div class="contact">
+                <i href="#" class="fa-brands fa-facebook" style="font-size:40px;color:#3b5998;"></i>
+                <i href="#" class="fa-brands fa-twitter" style="font-size:40px;color:#55acee;"></i>
+                <i href="#" class="fa-brands fa-discord" style="font-size:40px;color:#8A7EBE;"></i>
+            </div>
+        </nav>
+        <!-- ! The board -->
+        <div id="board" class="board"></div>
+        <div class="container">
+            <!-- ! Info of the game -->
+            <div class="info">
+                <h2>Game Information</h2>
+                <i id="black-turn" class="fa-solid fa-square" style="color: black;font-size: 16px; display: none;">
+                    Black to move</i>
+                <i id="white-turn" class="fa-solid fa-square" style="color: #ffffff;font-size: 16px;">
+                    White to move</i>
+                <div style="background: #666;border-radius: 5px;">
+                    <span style="display: table; margin: auto; font-weight: 600;">Moves</span>
+                    <div class="move-history" id="move-history"></div>
+                </div>
+            </div>
+            <br>
+            <button id="startBtn" class="start-btn" onclick="onStartBtn()">Start New Game</button>
+        </div>
+
+        <!-- ! Buttons -->
+        <div class="button-zone">
+            <div>
+                <button id="flipOrientationBtn" onclick="onFlipBtn()"><i class="fa-solid fa-rotate"></i></button>
+            </div>
+            <div>
+                <button id="settingBtn" onclick="settingBtn()"> <i class="fa-solid fa-gear"></i></button>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/chessboard-1.0.0.min.js"></script>
+    <script src="/js/chess.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

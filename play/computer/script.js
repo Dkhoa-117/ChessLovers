@@ -142,7 +142,6 @@ var evaluateBoard = function (board) {
 						break;
 				}
 				totalValue += value;
-				console.log(totalValue);
 			}
 		}
 	}
@@ -335,8 +334,7 @@ var board = ChessBoard("board", config);
 
 var flipOrientationBtn = () => {
 	board.flip();
-	board.sparePieces = false;
-	console.log("flip");
+	board.sparePieces = false; // ! troll :))) remember to delete this
 };
 var settingBtn = () => {};
 $("#startBtn").on("click", () => {
